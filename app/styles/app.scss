@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600');
+
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #2b2d42;
+}
+.container {
+  margin: 20px;
+}
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+nav {
+}
+#left-nav {
+  position: fixed;
+  top: 40px;
+  left: 30px;
+  text-align: left;
+}
+#right-nav {
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  text-align: right;
+  width: 200px;
+}
+nav a {
+  text-decoration: none;
+  padding-left: 5px;
+}
+a {
+  color: #2b2d42;
+}
+a:hover {
+  color: #ef233c;
+}
+#about {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form {
+
+}
+.hidden {
+  visibility: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  // padding: 5px;
+}
+h2 {
+  margin-top: 28px;
+}
+h4 {
+  text-align: center;
+  margin: 50px 0px 40px 0px;
+}
+.subtitle {
+  text-align: center;
+}
+.starred {
+  color: gold;
+}
+.not-starred {
+  color: lightgrey;
+}
+.clear {
+  clear: both;
+}
+#add {
+  text-align: right;
+  padding: 0% 3%;
+}
+h5 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.form-box {
+  background-color: #edf2f4;
+  width: 40%;
+  margin: 80px 30% 0px 30%;
+  float: left;
+  border-radius: 5px;
+  position: relative;
+  padding: 20px 20px 15px 20px;
+}
+.button {
+  background-color: white;
+  color: #2b2d42;
+  border-radius: 5px;
+  height: 22px;
+  border: none;
+}
+.button:hover {
+  background-color: #8d99ae;
+  color: white;
+}

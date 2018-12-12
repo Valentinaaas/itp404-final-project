@@ -1,0 +1,19 @@
+{{#if @liked}}
+  {{#bs-button
+    type="default"
+    outline=false
+    class="button"
+    onClick=(action "like")
+  }}
+    <span class="starred">&#9733;</span>
+  {{/bs-button}}
+{{else}}
+  {{#bs-button
+    type="default"
+    outline=false
+    class="button"
+    onClick=(action "like")
+  }}
+    <span class="not-starred">&#9733;</span>
+  {{/bs-button}}
+{{/if}}

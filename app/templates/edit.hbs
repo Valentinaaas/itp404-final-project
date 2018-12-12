@@ -1,0 +1,59 @@
+<h4>Edit your org</h4>
+<div class="form-box">
+  {{#bs-form
+    class="form"
+    formLayout=formLayout
+    model=model
+    onSubmit=(action "editOrg")
+  as |form|
+  }}
+    <div data-test="name">
+      <label for="name">
+        Name
+      </label>
+      {{form.element
+        controlType="input"
+        placeholder="Name"
+        property="name"
+        required=true
+      }}
+    </div>
+    <br>
+    <div data-test="category">
+      <label for="category">Category</label>
+      {{form.element
+        controlType="input"
+        placeholder="Category"
+        property="category"
+        required=true
+      }}
+    </div>
+    <br>
+    <div data-test="website">
+      <label for="website">Website</label>
+      {{form.element
+        controlType="input"
+        property="website"
+      }}
+    </div>
+    <br>
+    <div data-test="mission">
+      <label for="mission">Mission</label>
+      {{form.element
+        controlType="textarea"
+        rows="6"
+        cols="50"
+        property="mission"
+      }}
+    </div>
+    <br>
+    <span class="button">
+      <AsyncButton
+        data-test="save"
+        @defaultText="Save"
+        @pendingText="Saving..."
+        class="save-button"
+      />
+    </span>
+  {{/bs-form}}
+</div>

@@ -1,0 +1,13 @@
+<div class="container">
+  <div>
+    {{#each model as |org|}}
+      <div class="other-orgs">
+        {{#unless org.liked}}
+          <DisplayOrg data-test="unliked-org" @org={{org}}/>
+        {{/unless}}
+      </div>
+    {{/each}}
+  </div>
+</div>
+
+{{outlet}}

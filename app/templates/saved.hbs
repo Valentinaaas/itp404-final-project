@@ -1,0 +1,15 @@
+<style>
+
+</style>
+<div class="favorites">
+  <h4>Favorites:</h4>
+  {{#each model as |org|}}
+    <div class="fav-orgs">
+      {{#if org.liked}}
+        <DisplayOrg data-test="liked-org" @org={{org}}/>
+      {{/if}}
+    </div>
+  {{/each}}
+</div>
+
+{{outlet}}

@@ -1,0 +1,80 @@
+<style>
+  #org-box {
+    background-color: #edf2f4;
+    width: 600px;
+    margin: 50px 0px 50px 120px;
+    float: left;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px 20px 15px 20px;
+  }
+  #org-box a {
+    text-decoration: none;
+  }
+  .star-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  #edit-button {
+    font-size: 9pt;
+    text-decoration: none;
+    padding: 10px;
+  }
+  #invisible-delete-button {
+    margin-right: 10px;
+    font-size: 9pt;
+    background: transparent;
+    border: none !important;
+    font-size: 0;
+    position: fixed;
+  }
+  #category-subtitle {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: left;
+    color: #8d99ae;
+
+  }
+  p {
+    margin-top: 10px;
+  }
+</style>
+<div id="org-box">
+  <StarButton
+    @liked={{org.liked}}
+    onClick={{action "like" org}}
+    class="star-button"
+  />
+
+  {{#link-to "org" org.id}}
+    <h3 data-test="org">{{org.name}}</h3>
+  {{/link-to}}
+  <h4 id="category-subtitle">{{org.category}}</h4>
+  <p class="mission-paragraph">{{org.mission}}</p>
+
+  <button
+    type="button"
+    id="invisible-delete-button"
+    data-test="delete-org"
+    onclick={{action "deleteOrg" org}}
+  >
+  </button>
+  {{#bs-button
+    type="light"
+    class="button"
+    onClick=(action "deleteOrg" org)
+    defaultText="Delete"
+    pendingText="Deleting..."
+  }}
+  {{/bs-button}}
+
+
+
+
+  {{#link-to "edit" org.id class="btn btn-light button"}}
+    <span id="edit-button">
+      Edit
+    </span>
+  {{/link-to}}
+</div>
