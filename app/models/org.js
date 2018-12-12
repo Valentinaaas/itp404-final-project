@@ -5,5 +5,5 @@ export default DS.Model.extend({
   category: DS.attr('string'),
   website: DS.attr('string'),
   mission: DS.attr('string'),
-  liked: DS.attr('boolean')
+  liked: DS.attr('boolean'),
 });

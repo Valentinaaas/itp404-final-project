@@ -7,9 +7,9 @@ export default Route.extend({
    tokens.unshift('passion org');
    return tokens.reverse().join('-');
  },
- model() {
-   return new Ember.RSVP.Promise(function(resolve, reject) {
-     setTimeout(resolve);
-   });
- }
+ // model() {
+ //   return new Ember.RSVP.Promise(function(resolve, reject) {
+ //     setTimeout(resolve);
+ //   });
+ // }
 });
