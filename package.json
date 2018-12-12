@@ -24,7 +24,6 @@
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.1.0",
     "ember-bootstrap": "^2.3.0",
-    "ember-bootstrap-validations": "^1.0.0-alpha",
     "ember-burger-menu": "^3.3.3",
     "ember-cli": "~3.5.1",
     "ember-cli-app-version": "^3.2.0",
