@@ -6,5 +6,10 @@ export default Route.extend({
    tokens = makeArray(tokens);
    tokens.unshift('passion org');
    return tokens.reverse().join('-');
-  }
+ },
+ model() {
+   return new Ember.RSVP.Promise(function(resolve, reject) {
+     setTimeout(resolve);
+   });
+ }
 });
